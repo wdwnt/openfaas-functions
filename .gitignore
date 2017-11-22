@@ -3,3 +3,4 @@ build
 master.zip
 bin
 obj
+.vscode
