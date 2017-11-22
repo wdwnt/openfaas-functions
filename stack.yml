@@ -1,0 +1,13 @@
+provider:  
+  name: faas
+  gateway: http://localhost:8080
+
+functions:  
+  disney-asset-json-parser:
+    lang: python
+    handler: ./disney-asset-json-parser/
+    image: faas-disney-asset-json-parser
+  sfwmd-permits:
+    lang: csharp
+    handler: ./sfwmd-permits
+    image: sfwmd-permits
